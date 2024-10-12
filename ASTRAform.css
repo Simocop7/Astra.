@@ -1,0 +1,131 @@
+html {
+    background-color: rgb(13, 13, 13, 255);
+    font-family: 'Inter', thin, sans-serif;
+    font-weight: 100;
+}
+
+.big-title {
+    background: -webkit-linear-gradient(#ccc, rgb(122, 122, 122));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    animation: appearUp 1s ease;
+}
+
+@keyframes appearUp {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  } to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+    text-align: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+form {
+    margin: 0 auto 100px;
+}
+
+label {
+    position: relative;
+    color: #ccc;
+    float: left;
+    left: 25%;
+    background: transparent;
+    animation: appear 1s ease;
+}
+
+input {
+    color: #7D7F78;
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(22, 22, 22, 255);
+    border: none;
+    display: inline-block;
+    margin-top: 5px;    
+    animation: appear 1s ease;
+}
+
+textarea {
+    color: #7D7F78;
+    width: 50%;
+    border-radius: 10px;
+    height: 80px;
+    background-color: rgb(22, 22, 22, 255);
+    border: none;
+    margin-top: 5px;
+    animation: appear 1s ease;
+}
+
+button {
+    cursor: pointer;
+    background-color: rgb(221, 255, 0);
+    width: 50%;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    animation: appear 1s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: rgb(13, 13, 13);
+  border: 1px solid #DDFF00;
+  color: #DDFF00;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  } to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .big-title {
+    font-size: 30px;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  label {
+    left: 0;
+    font-size: 12px;
+  }
+
+  input {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  button:hover {
+    transform: scale(1);
+  }
+  
+}
